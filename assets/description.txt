@@ -1,0 +1,13 @@
+Section04-TodoAPI
+~~~~~~~~~~~~~~~~~
+- mini example
+- pages 96-108
+
+Section05-EshopMicroservices
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Section05-CatalogAPI-MS
+~~~~~~~~~~~~~~~~~~~~~~~
+- create a blank solution for EshopMicroservices (src)
+- create a ASP.NET Core Empty project called Catalog.API inside Services/Catalog solution
+
