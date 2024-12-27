@@ -3,11 +3,21 @@ Section04-TodoAPI
 - mini example
 - pages 96-108
 
-Section05-EshopMicroservices
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+EshopMicroservices
+~~~~~~~~~~~~~~~~~~~
 
-Section05-CatalogAPI-MS
-~~~~~~~~~~~~~~~~~~~~~~~
-- create a blank solution for EshopMicroservices (src)
-- create a ASP.NET Core Empty project called Catalog.API inside Services/Catalog solution
+Section05-CatalogAPI-MS - Vertical Slice Architecture and CQRS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Create a blank solution for EshopMicroservices (src)
+- Create a ASP.NET Core Empty project called Catalog.API inside Services/Catalog solution
+- Set Port Numbers for Catalog.API MS
+- Domain Analysis of Catalog MS: Models, UCs, Rest Apis, Databases
+- Technical Analysis of Catalog MS: Architectures, Patterns, Libraries
+- Vertical Slice Architecture
+- Vertical Slice Architecture versus Clean Architecture
+- CQRS Design Pattern
+- Logical and Physical implementation of CQRS Pattern
+- CQRS Design Pattern With MediatR Library (Logical implementation)
+- Develop Catalog.API MS creating Domain Entities
+- Develop Vertical Slice Feature Folder with CQRS and MediatR
 
