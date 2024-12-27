@@ -20,4 +20,7 @@ Section05-CatalogAPI-MS - Vertical Slice Architecture and CQRS
 - CQRS Design Pattern With MediatR Library (Logical implementation)
 - Develop Catalog.API MS creating Domain Entities
 - Develop Vertical Slice Feature Folder with CQRS and MediatR
+- Develop Feature Handler class with CQRS and MediatR
+- Create Abstraction on MediatR for CQRS - Command and Query seperation (BuildingBlocks)
+- Implement CQRS Abstractions ICommand into Vertical Slice Feature Handler class
 
