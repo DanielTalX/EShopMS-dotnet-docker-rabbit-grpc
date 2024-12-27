@@ -23,4 +23,6 @@ Section05-CatalogAPI-MS - Vertical Slice Architecture and CQRS
 - Develop Feature Handler class with CQRS and MediatR
 - Create Abstraction on MediatR for CQRS - Command and Query seperation (BuildingBlocks)
 - Implement CQRS Abstractions ICommand into Vertical Slice Feature Handler class
+- Develop Create Product Endpoint with Minimal Apis and Carter 
+- Develop Post Endpoint with Carter implements ICarterModule for Minimal Apis
 
