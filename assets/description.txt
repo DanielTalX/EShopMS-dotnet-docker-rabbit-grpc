@@ -25,4 +25,6 @@ Section05-CatalogAPI-MS - Vertical Slice Architecture and CQRS
 - Implement CQRS Abstractions ICommand into Vertical Slice Feature Handler class
 - Develop Create Product Endpoint with Minimal Apis and Carter 
 - Develop Post Endpoint with Carter implements ICarterModule for Minimal Apis
+- Register MediatR and Carter libraries into ASP.NET Dependency Injection Services
+- Test Catalog API - Create Product POST Request - Debug Carter Minimal API and MediatR
 

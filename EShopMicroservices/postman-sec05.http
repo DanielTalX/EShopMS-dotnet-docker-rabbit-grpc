@@ -1,0 +1,16 @@
+#@baseUrl = http://localhost:5000
+@baseUrl = https://localhost:5050
+@createdAt = {{$datetime iso8601}}
+
+###
+POST {{baseUrl}}/products HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Product A",
+    "Category": ["c1", "c2"],
+    "Description": "Description Product A",
+    "ImageFile": "ImageFile Product A",
+    "Price": 199
+}
+
