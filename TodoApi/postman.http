@@ -1,0 +1,35 @@
+#@baseUrl = http://localhost:5153
+#@baseUrl = https://localhost:7033
+@baseUrl = https://localhost:32769
+@createdAt = {{$datetime iso8601}}
+
+###
+GET {{baseUrl}}/todoitems HTTP/1.1
+content-type: application/json
+
+###
+POST {{baseUrl}}/todoitems HTTP/1.1
+content-type: application/json
+
+{
+    "name": "go gym",
+    "isComplete": false
+}
+
+###
+GET {{baseUrl}}/todoitems/1 HTTP/1.1
+content-type: application/json
+
+###
+PUT {{baseUrl}}/todoitems/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "go gym1",
+    "isComplete": true
+}
+
+###
+DELETE {{baseUrl}}/todoitems/2 HTTP/1.1
+Content-Type: application/json

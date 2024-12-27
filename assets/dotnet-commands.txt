@@ -1,0 +1,50 @@
+- dotnet new list 
+
+- create a new project - ASP.NET Core Web API (sec4-27)
+    Step1: Install .NET SDK (if not already installed)
+        - verify: dotnet --version
+    Step 2: Create a New Web API Project
+        - mkdir MyApiProject
+        - cd MyApiProject
+        - dotnet new webapi -n MyApiProject
+    Step 3: Build and Run the Project
+        - cd MyApiProject
+        - dotnet run
+    Step 4: Test the API (Optional)
+        - curl https://localhost:5001/weatherforecast
+    Step 5: Open the Project in an IDE (Optional)
+        - code .
+
+- create a new project - ASP.NET Core Empty (sec4-28)
+    Step1: Install .NET SDK (if not already installed)
+        - verify: dotnet --version
+    Step 2: Create a new Empty Project
+        - mkdir MyEmptyProject (TodoApi)
+        - cd MyEmptyProject
+        - dotnet new web -n MyEmptyProject
+    Step 3: Build and Run the Project
+        - cd MyEmptyProject
+        - dotnet run
+    Step 4: Test the API (Optional)
+        - curl https://localhost:5001/weatherforecast
+    Step 5: Open the Project in an IDE (Optional)
+        - code .
+
+- Add Docker Support
+    Step1: Use the Command Palette (Ctrl+Shift+P or Cmd+Shift+P) and search for Docker: Add Docker Files to Workspace.
+        - Select ASP.NET Core as the application platform.
+        - Choose Linux as the Docker OS.
+        - Accept the default port configuration or set custom ports.
+        - Visual Studio Code will generate the necessary Docker files: Dockerfile, .dockerignore, docker-compose.yml
+    Step2: Run the Project with Docker
+        - Build the Docker image: docker build -t myapiimage .
+        - Run the container: docker run -d -p 5000:80 -p 5001:443 --name myapicontainer myapiimage
+            - Maps ports 5000 (HTTP) and 5001 (HTTPS) on your machine to the container.
+            - HTTP: http://localhost:5000
+            - HTTPS: https://localhost:5001
+    Step3: Test HTTPS and Debug
+        - Open your browser and navigate to the HTTPS URL: https://localhost:5001.
+        For debugging:
+            - Open the Run and Debug menu in Visual Studio Code.
+            - Use the Docker or ASP.NET Core configurations created automatically.
+
