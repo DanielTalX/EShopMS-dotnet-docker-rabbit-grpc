@@ -28,3 +28,11 @@ Section05-CatalogAPI-MS - Vertical Slice Architecture and CQRS
 - Register MediatR and Carter libraries into ASP.NET Dependency Injection Services
 - Test Catalog API - Create Product POST Request - Debug Carter Minimal API and MediatR
 
+Section06-CatalogAPI-MS - Infrastructure, Handler and Endpoint Class
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Opening Sessions in Marten as Document DB
+- Develop CommandHandler to Save Product to DB using Marten Library
+- Register and Configure Marten DocumentDB Library into Program.cs DI
+- Setup PostgreSQL DB using Docker-compose file for multi-container Docker env
+- Add PostgreSQL DB image into Docker-compose file for multi-container Docker env
+
