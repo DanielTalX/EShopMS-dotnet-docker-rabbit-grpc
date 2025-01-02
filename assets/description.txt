@@ -35,4 +35,9 @@ Section06-CatalogAPI-MS - Infrastructure, Handler and Endpoint Class
 - Register and Configure Marten DocumentDB Library into Program.cs DI
 - Setup PostgreSQL DB using Docker-compose file for multi-container Docker env
 - Add PostgreSQL DB image into Docker-compose file for multi-container Docker env
+- Run Docker-Compose on Visual Studio to setup PostgreSAL DB on Docker
+- Connect Postgres DB from local Catalog Microservices and send POST request
+- Develop [GetProducts, GetProductByld, GetProductByCategory, UpdateProduct, DeleteProduct] Feature in Vertical Slice with CORS, MediatR in Handler class
+- Develop [GetProducts, GetProductByld, GetProductByCategory, UpdateProduct, DeleteProduct] Endpoint with Minimal Apis and Carter
+- Test [GetProducts, GetProductByld, GetProductByCategory, UpdateProduct, DeleteProduct] Endpoint Connecting to Docker Postgres Container
 

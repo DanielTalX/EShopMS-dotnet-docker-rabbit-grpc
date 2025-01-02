@@ -1,0 +1,46 @@
+@baseUrl = http://localhost:5000
+#@baseUrl = https://localhost:5050
+@createdAt = {{$datetime iso8601}}
+
+###
+GET {{baseUrl}}/products HTTP/1.1
+content-type: application/json
+
+###
+GET {{baseUrl}}/products/019418d9-221d-4aba-bb35-edcca04f6ba6 HTTP/1.1
+content-type: application/json
+
+###
+GET {{baseUrl}}/products/category/c3 HTTP/1.1
+content-type: application/json
+
+###
+POST {{baseUrl}}/products HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Product A",
+    "Category": ["c1", "c2"],
+    "Description": "Description Product A",
+    "ImageFile": "ImageFile Product A",
+    "Price": 199
+}
+
+
+###
+PUT  {{baseUrl}}/products HTTP/1.1
+content-type: application/json
+
+{
+    "id": "019418d9-221d-4aba-bb35-edcca04f6ba6",
+    "name": "Product A Update",
+    "Category": ["c1", "c2", "c3"],
+    "Description": "Description Product A Update",
+    "ImageFile": "ImageFile Product A Update",
+    "Price": 200
+}
+
+
+###
+DELETE  {{baseUrl}}/products/019418d9-221d-4aba-bb35-edcca04f6ba6 HTTP/1.1
+content-type: application/json
