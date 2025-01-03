@@ -41,3 +41,9 @@ Section06-CatalogAPI-MS - Infrastructure, Handler and Endpoint Class
 - Develop [GetProducts, GetProductByld, GetProductByCategory, UpdateProduct, DeleteProduct] Endpoint with Minimal Apis and Carter
 - Test [GetProducts, GetProductByld, GetProductByCategory, UpdateProduct, DeleteProduct] Endpoint Connecting to Docker Postgres Container
 
+Section07-CatalogAPI-MS-Develop Catalog.API Crosscutting Concerns
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- MediatR Pipeline Behaviours and Fluent Validation Library
+- Add Cross-cutting Concerns into BuildingBlocks Class Library for all services
+- Cross-cutting Concerns: Validate with AbstractValidator using Fluent Validation
+
