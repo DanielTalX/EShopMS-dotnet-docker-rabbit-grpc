@@ -16,20 +16,14 @@ public class CreateProductCommandValidator : AbstractValidator<CreateProductComm
 }
 
 internal class CreateProductCommandHandler
-    (IDocumentSession session, IValidator<CreateProductCommand> validator) 
+    (IDocumentSession session) 
     : ICommandHandler<CreateProductCommand, CreateProductResult>
 {
     public async Task<CreateProductResult> Handle(CreateProductCommand command, CancellationToken cancellationToken)
     {
         // Business logic to create a product
 
-        // validate command params
-        var result = await validator.ValidateAsync(command, cancellationToken);
-        var errors = result.Errors.Select(x=>x.ErrorMessage).ToList();
-        if(errors.Any())
-        {
-            throw new ValidationException(errors.FirstOrDefault());
-        }
+        // validate command params via CreateProductCommandValidator by FluentValidation middleware
 
         // create Product entity from command object
         var product = new Product

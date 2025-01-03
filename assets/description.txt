@@ -46,4 +46,6 @@ Section07-CatalogAPI-MS-Develop Catalog.API Crosscutting Concerns
 - MediatR Pipeline Behaviours and Fluent Validation Library
 - Add Cross-cutting Concerns into BuildingBlocks Class Library for all services
 - Cross-cutting Concerns: Validate with AbstractValidator using Fluent Validation
+- Remove Manual Validator and Test Validation Pipeline Behaviour with MediatR
+- Develop CRUD Command Validators with Fluent Validation Pipeline Behaviour
 
