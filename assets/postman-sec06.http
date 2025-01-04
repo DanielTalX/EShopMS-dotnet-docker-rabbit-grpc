@@ -7,6 +7,10 @@ GET {{baseUrl}}/products HTTP/1.1
 content-type: application/json
 
 ###
+GET {{baseUrl}}/products?pageNumber=2&pageSize=2 HTTP/1.1
+content-type: application/json
+
+###
 GET {{baseUrl}}/products/019418d9-221d-4aba-bb35-edcca04f6ba6 HTTP/1.1
 content-type: application/json
 
@@ -28,7 +32,7 @@ content-type: application/json
 
 
 ###
-PUT  {{baseUrl}}/products HTTP/1.1
+PUT {{baseUrl}}/products HTTP/1.1
 content-type: application/json
 
 {
@@ -42,5 +46,9 @@ content-type: application/json
 
 
 ###
-DELETE  {{baseUrl}}/products/019418d9-221d-4aba-bb35-edcca04f6ba6 HTTP/1.1
+DELETE {{baseUrl}}/products/019418d9-221d-4aba-bb35-edcca04f6ba6 HTTP/1.1
+content-type: application/json
+
+###
+GET {{baseUrl}}/health HTTP/1.1
 content-type: application/json
