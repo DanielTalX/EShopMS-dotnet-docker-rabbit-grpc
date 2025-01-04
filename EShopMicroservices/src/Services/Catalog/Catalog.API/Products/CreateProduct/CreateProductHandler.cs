@@ -23,6 +23,7 @@ internal class CreateProductCommandHandler
     {
         // Business logic to create a product
 
+        // logging the request via LoggingBehavior by BuildingBlocks.Behaviors middleware
         // validate command params via CreateProductCommandValidator by FluentValidation middleware
 
         // create Product entity from command object
