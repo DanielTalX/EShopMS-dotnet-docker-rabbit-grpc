@@ -48,4 +48,7 @@ Section07-CatalogAPI-MS-Develop Catalog.API Crosscutting Concerns
 - Cross-cutting Concerns: Validate with AbstractValidator using Fluent Validation
 - Remove Manual Validator and Test Validation Pipeline Behaviour with MediatR
 - Develop CRUD Command Validators with Fluent Validation Pipeline Behaviour
+- BuildingBlocks Handling Exceptions Generic Way app.UseExceptionHandler
+- Global Exception Handling with ExceptionHandler interface in Asp.net Core
+- Register Custom Exception Handling into Asp.net with AddExceptionHandler method
 
