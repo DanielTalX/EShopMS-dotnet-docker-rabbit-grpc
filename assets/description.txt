@@ -52,3 +52,5 @@ Section07-CatalogAPI-MS-Develop Catalog.API Crosscutting Concerns
 - Global Exception Handling with ExceptionHandler interface in Asp.net Core
 - Register Custom Exception Handling into Asp.net with AddExceptionHandler method
 - Logging Behavior in MediatR Pipeline for Crosscutting concerns
+- Seeding CatalogDb with Marten Initial Baseline Data (InitialData interface)
+
